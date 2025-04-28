@@ -1,0 +1,27 @@
+section {
+  width: 100vw;
+  background-color: hsl(0, 0%, 75%, 30%);
+  .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 4em auto;
+    justify-content: space-between;
+    align-items: center;
+
+    .header {
+      text-align: center;
+      max-width: 500px;
+    }
+    .header .tittle {
+      font-size: 2em;
+      font-weight: 600;
+    }
+    .header .text {
+      color: hsl(255, 11%, 22%);
+    }
+    .boxes {
+      display: flex;
+    }
+  }
+}

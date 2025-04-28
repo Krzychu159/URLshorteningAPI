@@ -1,0 +1,55 @@
+header {
+  display: flex;
+  max-width: 1200px;
+  margin: 2em auto;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(257, 7%, 63%);
+  font-weight: 600;
+  font-size: 0.9em;
+
+  .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 50px;
+    display: flex;
+    align-items: center;
+  }
+  .menu li {
+    margin-right: 20px;
+    color: hsl(257, 7%, 63%);
+  }
+  .menu li:hover {
+    color: black;
+    cursor: pointer;
+  }
+  .buttons {
+    display: flex;
+  }
+  button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-weight: 550;
+    background-color: hsl(180, 66%, 49%);
+  }
+  button:hover {
+    background-color: hsl(180, 66%, 49%, 50%);
+    cursor: pointer;
+  }
+  .login {
+    background-color: #fff;
+    color: hsl(257, 7%, 63%);
+    margin-right: 20px;
+  }
+  .login:hover {
+    color: black;
+    cursor: pointer;
+  }
+}

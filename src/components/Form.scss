@@ -1,0 +1,44 @@
+form {
+  display: flex;
+  max-width: 1200px;
+  height: 17vh;
+  margin: 4em auto;
+  align-items: center;
+  background-image: url("../assets/bg-boost-desktop.svg");
+  background-color: hsl(257, 27%, 26%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  gap: 15px;
+  padding: 0 3em;
+  justify-content: center;
+
+  input,
+  button {
+    height: 60px;
+    border-radius: 8px;
+    padding: 0 1em;
+    font-size: 1.2em;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  input {
+    flex: 6;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  button {
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    font-weight: 550;
+    flex: 1;
+  }
+}

@@ -1,0 +1,43 @@
+main {
+  display: flex;
+  max-width: 1200px;
+  margin: 4em auto;
+  justify-content: space-between;
+  align-items: center;
+
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+  }
+  .right {
+    flex: 1;
+  }
+  .tittle {
+    font-size: 4em;
+    font-weight: 700;
+  }
+  .text {
+    color: hsl(257, 7%, 63%);
+    margin: 1em 0 1.5em 0;
+    width: 70%;
+    font-size: 1.1em;
+  }
+  button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-weight: 550;
+    background-color: hsl(180, 66%, 49%);
+    max-width: 130px;
+  }
+  button:hover {
+    background-color: hsl(180, 66%, 49%, 50%);
+    cursor: pointer;
+  }
+  img {
+    max-width: 70vh;
+  }
+}
