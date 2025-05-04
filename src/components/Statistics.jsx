@@ -1,5 +1,7 @@
 import "./Statistics.scss";
 import icon1 from "../assets/icon-brand-recognition.svg";
+import icon2 from "../assets/icon-detailed-records.svg";
+import icon3 from "../assets/icon-fully-customizable.svg";
 
 function Statistics() {
   return (
@@ -13,7 +15,7 @@ function Statistics() {
           </div>
         </div>
         <div className="boxes">
-          <div>
+          <div className="box box1">
             <div className="img">
               <img src={icon1} alt="icon" />
             </div>
@@ -25,9 +27,9 @@ function Statistics() {
               content.
             </div>
           </div>
-          <div>
+          <div className="box box2">
             <div className="img">
-              <img src={icon1} alt="icon" />
+              <img src={icon2} alt="icon" />
             </div>
             <div className="tittle">Brand Recogniton</div>
             <div className="text">
@@ -37,9 +39,9 @@ function Statistics() {
               content.
             </div>
           </div>
-          <div>
+          <div className="box box3">
             <div className="img">
-              <img src={icon1} alt="icon" />
+              <img src={icon3} alt="icon" />
             </div>
             <div className="tittle">Brand Recogniton</div>
             <div className="text">
