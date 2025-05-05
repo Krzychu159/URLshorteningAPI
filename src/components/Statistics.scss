@@ -11,6 +11,10 @@ section {
     margin: 4em auto;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 768px) {
+      width: 90%;
+      margin: 0 5%;
+    }
 
     .header {
       text-align: center;
@@ -23,12 +27,19 @@ section {
     }
     .header .text {
       color: hsl(257, 7%, 63%);
+      @media (max-width: 768px) {
+        font-size: 1.1em;
+      }
     }
     .boxes {
       position: relative;
       margin-top: 80px;
       display: flex;
       gap: 40px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
 
       &::before {
         content: "";
@@ -47,17 +58,24 @@ section {
       }
       .box1 {
         position: relative;
-        top: -30px;
+        @media (max-width: 768px) {
+          top: 0;
+        }
       }
 
       .box2 {
         position: relative;
         top: 0;
+        @media (max-width: 768px) {
+          top: 0;
+        }
       }
 
       .box3 {
         position: relative;
-        top: 30px;
+        @media (max-width: 768px) {
+          top: 0;
+        }
       }
 
       .img {
