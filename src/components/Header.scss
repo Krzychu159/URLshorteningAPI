@@ -13,6 +13,7 @@ header {
     flex-direction: row;
     align-items: center;
   }
+
   .menu ul {
     list-style: none;
     padding: 0;
@@ -20,17 +21,21 @@ header {
     display: flex;
     align-items: center;
   }
+
   .menu li {
     margin-right: 20px;
     color: hsl(257, 7%, 63%);
   }
+
   .menu li:hover {
     color: black;
     cursor: pointer;
   }
+
   .buttons {
     display: flex;
   }
+
   button {
     padding: 10px 20px;
     border-radius: 20px;
@@ -39,17 +44,71 @@ header {
     font-weight: 550;
     background-color: hsl(180, 66%, 49%);
   }
+
   button:hover {
     background-color: hsl(180, 66%, 49%, 50%);
     cursor: pointer;
   }
+
   .login {
     background-color: #fff;
     color: hsl(257, 7%, 63%);
     margin-right: 20px;
   }
+
   .login:hover {
     color: black;
     cursor: pointer;
+  }
+
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 0;
+  }
+
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+
+    .hamburger {
+      display: block;
+      margin-left: auto;
+    }
+
+    .menu.active {
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu ul {
+      flex-direction: column;
+      margin: 0;
+      padding: 20px;
+      background-color: white;
+    }
+
+    .menu li {
+      margin: 15px 0;
+      text-align: center;
+    }
+
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      margin-bottom: 10px;
+    }
   }
 }

@@ -17,6 +17,11 @@ article {
     font-size: 2em;
     font-weight: 600;
     color: white;
+    @media (max-width: 768px) {
+      text-align: center;
+      width: 100%;
+      font-size: 1.8em;
+    }
   }
   button {
     padding: 13px 25px;
