@@ -4,6 +4,7 @@ import Form from "./components/Form";
 import Statistics from "./components/Statistics";
 import Boost from "./components/Boost";
 import Footer from "./components/Footer";
+import API from "./components/API";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Statistics />
       <Boost />
       <Footer />
+      <API />
     </>
   );
 }
